@@ -1,13 +1,8 @@
-const express = require('express');
+import app from "./app";
 
-const config = require("./server/config");
+// database
+import "./config/mongoose";
 
-//getting database
-require('./database');
-
-//start server
-const app = config(express());
-
-app.listen(app.get('port'), () => {
-	console.log('Server runngin in port:', app.get('port'));
-});
+// Starting the server
+app.listen(app.get("port"));
+console.log("Server on port", app.get("port"));
