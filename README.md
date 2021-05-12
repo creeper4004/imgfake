@@ -12,7 +12,7 @@ imgShare is a web application to share images, comments, and more.
 # Installation
 
 ```
-git clone https://github.com/FaztTech/nodejs-imgshare
+git clone https://github.com/creeper4004/imgfake
 cd nodejs-imagshare
 npm install
 npm run build
